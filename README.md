@@ -1,4 +1,4 @@
-# DLR-2024-1-
+# DLR-2024-1
 
 Public materials for my Introductory LaTeX Course at DLR
 
