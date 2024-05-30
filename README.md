@@ -1,13 +1,99 @@
 # DLR-2024-1
 
-Public materials for my Introductory LaTeX Course at DLR
+Öffentliche Materialien für den Einführungskurs 2024 LaTeX am DLR
+
+## Kurstermine
+
+* Dienstag, 2024-06-04
+* Donnerstag, 2024-06-06
+* Dienstag, 2024-06-11
+* Dienstag, 2024-06-18
+
+An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zugangsdaten werden per E-Mail versandt.
+
+## Wie kommt man an die Materialien?
+
+git installieren und dann auf der Kommandozeile
+
+git clone https://github.com/UweZiegenhagen/FUH-LaTeX-2024-1.git
+
+Updates holt man wie folgt, lokal geänderte Dateien werden dabei überschrieben!
+
+git fetch --all
+git reset --hard origin/main
+
+In den nächsten Monaten wird das Repository noch öffentlich zugänglich sein, 
+irgendwann werde ich es auf privat setzen. Ihr könnt es gern forken, aber dann
+vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
 
 
-## Course Dates
 
-* Tuesday, 2024-06-04
-* Thursday, 2024-06-06
-* Tuesday, 2024-06-11
-* Tuesday, 2024-06-18
+## Was wird benötigt
 
-Each date will consist of four hours, from 9--11 and from 13--15.
+* Ein Rechner (Laptop, Desktop) mit Windows, MacOS oder Linux
+* TeX Live 2024 herunterladen und installieren von tug.org/texlive. Eine Anleitung (für TeX Live 2022, es hat sich aber nichts wesentliches geändert) habe ich unter https://www.youtube.com/watch?v=k9KhuZz7k-Q veröffentlicht.
+* Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oftmals nicht aktuell. 
+* Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
+* Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten und einfach zu bedienenden Editor, den ich persönlich gern benutze. 
+* Grundkenntnisse von Git bzw. Github sind nicht verkehrt, da alle meine Dateien im Github liegen.
+
+## Kursinhalte
+
+Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teilnehmerinnen und Teilnehmer, mit dem folgenden Ablauf plane ich:
+
+### Tag 1 - Grundlagen
+
+* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
+* Historie von TeX und LaTeX
+* Kurze Vorstellung von DANTE e.V.
+* Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
+* Klassen, Pakete, Umgebungen und Befehle
+* Warum man article, report und book nicht unbedingt nutzen sollte -- die KOMA-Klassen
+* Strukturierte Dokumente, ``\chapter``, ``\section`` & Co, Inhaltverzeichnisse
+* Referenzen mit ``\label`` und ``\ref``
+* Einfache Bilder einbetten, Bilderverzeichnisse
+* Einfacher Tabellensatz und Tabellenverzeichnisse
+* Float-Objekte
+
+### Tag 2 - Tabellen, Mathematik, und mehr
+
+* Wiederholung vom 1. Tag, Fragen beantworten
+* Schneller TeX mit Autohotkey & Co
+* LaTeX automatisieren mit ``Arara``
+* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
+* Mathematiksatz (mit ``amsmath``)
+* Das Paket ``nicematrix``
+* Einheitensatz mit ``siunitx``
+* Präsentationen mit ``Beamer``
+* Briefe setzen mit ``scrlttr2``
+* Quellcode-Listings einfügen mit dem ``Listings`` Paket
+
+### Tag 3 - Bibliografien und Präsentationen
+
+* Zusammenfassung vom 2. Termin, Wiederholung
+* Flyer basteln mit ``leaflet``
+* Lebensläufe erstellen mit LaTeX
+* Seitenränder einstellen mit ``geometry``
+* Kopf/Fußzeilen anpassen mit ``scrpage``
+* Mehr zum Bilder einbetten: ``subcaption`` 
+* Mehr zu Referenzen
+* Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
+* Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
+* Einfache Bibliografien -- die ``thebibliography`` Umgebung
+* Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
+* Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
+
+### Tag 4 - TikZ und Sonstiges
+
+* Fragen zum letzten Mal?
+* git und github
+* Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
+* Kopf/Fußzeilen anpassen mit ``scrpage`` => Option ``automark`` hat gefehlt
+* Mehrere Schriftarten im Dokument
+* Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
+* Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
+* Syntaxhighlighting mit pygments
+* Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
+* Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
+
+
