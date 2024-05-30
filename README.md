@@ -86,7 +86,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * Fragen zum letzten Mal?
-* git und github
 * Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
 * Kopf/Fußzeilen anpassen mit ``scrpage`` => Option ``automark`` hat gefehlt
 * Mehrere Schriftarten im Dokument
@@ -96,4 +95,10 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
 
+## Literaturempfehlungen
+
+Empfohlen werden:
+
+* Alle Bücher von Herbert Voß (https://www.lehmanns.de/search/quick?PHPSESSID=mi28bh61dhv2nu8keg4hjnkunumgi5ah&mediatype_id=&q=herbert+vo%C3%9F), insbesondere die Einführung
+* Der LaTeX Companion in der 3. Auflage, wenn man mehr wissen möchte
 
