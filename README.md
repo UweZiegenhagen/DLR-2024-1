@@ -44,6 +44,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 1 - Grundlagen
 
 * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
+* Gibt es Vorlagen, die ihr nutzen müsst oder wollt?
 * Historie von TeX und LaTeX
 * Kurze Vorstellung von DANTE e.V.
 * Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
