@@ -1,0 +1,63 @@
+ \documentclass[12pt,ngerman,parskip=half]{scrartcl}
+ 
+\usepackage{multirow}
+\usepackage{tabularray}
+
+\begin{document}
+ 
+\section{Normale Tabelle}
+ 
+ \begin{tabular}{|c|c|c|c|c|c|} \hline
+ a	&	b	&	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	q	&	r	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \hline
+\end{tabular}
+
+\section{Multicolumn}
+ 
+ \begin{tabular}{|c|c|c|c|c|c|} \hline
+ \multicolumn{2}{|c|}{a}  &	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	q	&	r	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \hline
+\end{tabular}\vspace*{1em}
+ 
+\section{Multirow}
+
+In die obere *-Zelle kommt der \texttt{\textbackslash multirow} Befehl, die untere *-Zelle wird geleert.
+ 
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+a   &  b   &	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	*	&	r	\\ \hline
+s	&	t	&	u	&	v	&	*	&	x	\\ \hline
+\end{tabular}
+ 
+\begin{tabular}{|c|c|c|c|c|c|} \hline
+a  &   b   &	c	&	d	&	e	&	f	\\ \hline
+g	&	h	&	i	&	j	&	k	&	l	\\ \hline
+m	&	n	&	o	&	p	&	\multirow[c]{2}{*}{q} 	&	r \\ \cline{1-4} \cline{6-6}
+s	&	t	&	u	&	v	&		&	x	\\ \hline
+\end{tabular}
+
+\section{tabularray}
+
+Umsetzung mittels tabularray-Paket.
+
+
+\begin{tblr}{
+  colspec={|c|c|c|c|c|c|},
+  hline{1,2,3,4,5},
+  cell{1}{1} = {c=2}{c}, % multicolumn
+  cell{3}{5} = {r=2}{m}, % multirow
+}
+ a	&	b	&	c	&	d	&	e	&	f	\\ 
+g	&	h	&	i	&	j	&	k	&	l	\\ 
+m	&	n	&	o	&	p	&	q	&	r	\\ 
+s	&	t	&	u	&	v	&	w	&	x	\\ 
+\end{tblr}
+
+
+ \end{document}
+ 
