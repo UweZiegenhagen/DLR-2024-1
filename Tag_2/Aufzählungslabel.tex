@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{amssymb} % für \maltese
 \usepackage{enumitem}
+\usepackage{graphicx}
 
 \begin{document}
 
@@ -14,6 +15,7 @@
 
 \setlist[itemize,1]{label={\color{gray!50}$\maltese$}}
 \setlist[itemize,2]{label={\color{red!50}$\maltese$}}
+\setlist[itemize,3]{label={\includegraphics[width=2mm]{Bilder/Katze}}}
 
 \begin{itemize}
 	\item a
@@ -23,7 +25,18 @@
 	\item aa
 	\item bb
 	\item cc
+	\item dd 
+	
+	\begin{itemize}
+	\item aa
+	\item bb
+	\item cc
 	\item dd
+	\item ee
+	\item ff
+\end{itemize}
+	
+	
 	\item ee
 	\item ff
 \end{itemize}
