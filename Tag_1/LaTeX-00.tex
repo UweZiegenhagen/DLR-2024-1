@@ -10,6 +10,7 @@
 \usepackage{babel}
 \usepackage{blindtext}
 \usepackage{microtype}
+\usepackage{graphicx}
 
 \usepackage{hyperref}
 \hypersetup{
@@ -38,7 +39,11 @@
 
 \tableofcontents
 
-\section{Einleitung}
+\pagebreak % \newpage
+
+\listoffigures
+
+\section{Einleitung}\label{sec:Einleitung}
 \subsection{Literatur}
 
 \subsubsection{Deutschland}
@@ -48,6 +53,34 @@ Hallo DLR!
 Hallo DLR, ich bin ein Satz. Ich bin der zweite Satz im gleichen Absatz.
 
 Hallo DLR, ich bin ein Satz.  Ich bin der zweite Satz im gleichen Absatz.
+
+% PDF kann PDF, JPG und PNG
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze}
+\caption{Melli 1}\label{fig:Katze}
+\end{center}
+\end{figure}
+
+\blindtext[10]
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/Katze1}
+\caption{Melli 2, \blindtext}
+\end{center}
+\end{figure}
+
+\blindtext[10]
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Bilder/miau}
+\caption{Melli 3}
+\end{center}
+\end{figure}
 
 \subsubsection{International}
 
@@ -64,17 +97,9 @@ sdfsdfsd
 
 \section{Fazit}
 
-\blindtext[1000]
+\blindtext[10]
 
-\blindtext[100]
+Siehe Abbildung \ref{fig:Katze} auf Seite \pageref{fig:Katze}
 
-\blindtext[100]
-
-\blindtext[100]
-
-\blindtext[100]
-
-\blindtext[100]
-
-
+Siehe Abschnitt \ref{sec:Einleitung}
 \end{document}
