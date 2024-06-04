@@ -3,15 +3,40 @@
 % article, report und book sind US/englische Klassen.
 % Im deutschsprachigen Raum sind KOMA Klassen besser
 
-
 \author{Uwe Ziegenhagen}
 \title{Mein erstes LaTeX-Dokument}
 
+% Lokalisierung von vielen Begriffen, Silbentrennung
 \usepackage{babel}
+% Dummy Text
 \usepackage{blindtext}
+% Mikrotypografie, optischer Randausgleich
 \usepackage{microtype}
+% Grafiken einbinden
 \usepackage{graphicx}
+% Farbunterstützung laden
+\usepackage{xcolor}
 
+% Schöne Tabellen
+\usepackage{booktabs}
+
+%\usepackage{showlabels}
+\usepackage{showkeys}
+
+\usepackage{prettyref}
+\newrefformat{sec}{Abschnitt~\ref{#1} auf Seite~\pageref{#1}}
+\newrefformat{fig}{Grafik/Abbildung~\ref{#1}}
+\newrefformat{eq}{\textup{(\ref{#1})}}
+\newrefformat{tab}{Tabelle \ref{#1} auf Seite \pageref{#1}}
+\newrefformat{cha}{Kapitel \ref{#1}}
+
+\usepackage[pagewise]{lineno}
+\linenumbers
+
+% Benenne ``Abbildung'' um in ``Abb.''
+\renewcaptionname{ngerman}{\figurename}{Abb.}
+
+% Hyperlinks im Dokument, üblicherweise als letztes laden
 \usepackage{hyperref}
 \hypersetup{
     bookmarks=true,                     % show bookmarks bar
@@ -34,16 +59,22 @@
     urlcolor=blue                        % color of external links
 }
 
+% Einfache Definition von eigenen Befehlen in LaTeX 2e Syntax
+\newcommand{\person}[1]{\textsc{\textcolor{red}{#1}}}
+\newcommand{\Person}[2]{\textsc{\textcolor{red}{#1}~\textcolor{gray}{#2}}}
+\newcommand{\dlr}[1]{Deutsche Zentrum für Luft- und Raumfahrt}
+\newcommand{\Dlr}[1]{Deutschem Zentrum für Luft- und Raumfahrt}
+
 \begin{document}
 \maketitle
 
 \tableofcontents
 
-\pagebreak % \newpage
+%\pagebreak % \newpage
 
 \listoffigures
 
-\section{Einleitung}\label{sec:Einleitung}
+\section[Einleitung und Überblick]{Einleitung in das Thema unter Berücksichtigung der Literatur im In- und Ausland}\label{sec:Einleitung}
 \subsection{Literatur}
 
 \subsubsection{Deutschland}
@@ -52,7 +83,11 @@ Hallo DLR!
 
 Hallo DLR, ich bin ein Satz. Ich bin der zweite Satz im gleichen Absatz.
 
-Hallo DLR, ich bin ein Satz.  Ich bin der zweite Satz im gleichen Absatz.
+\person{Albert Einstein} hat in seiner Diss tolle Dinge bewiesen. 
+
+\Person{Albert}{Einstein} hat in seiner Diss tolle Dinge bewiesen. 
+
+Hallo DLR, ich bin ein Satz.  Ich bin der erste Satz im zweiten Absatz.
 
 % PDF kann PDF, JPG und PNG
 \begin{figure}
@@ -68,7 +103,7 @@ Hallo DLR, ich bin ein Satz.  Ich bin der zweite Satz im gleichen Absatz.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{Bilder/Katze1}
-\caption{Melli 2, \blindtext}
+\caption[Kurzversion der caption]{Melli 2, \blindtext}
 \end{center}
 \end{figure}
 
@@ -99,7 +134,45 @@ sdfsdfsd
 
 \blindtext[10]
 
-Siehe Abbildung \ref{fig:Katze} auf Seite \pageref{fig:Katze}
+Siehe Abbildung \ref{fig:Katze} auf dsadsf sdfsd fsd fsd sdf sdf dsf sdf sdfsd fsd sfsdfsd fsdf df  Seite~\pageref{fig:Katze}
 
 Siehe Abschnitt \ref{sec:Einleitung}
+
+Siehe \prettyref{sec:Einleitung}
+
+Siehe \prettyref{fig:Katze}
+
+\section{Tabellen}
+\subsection{Eine einfache Tabelle}
+%left, right, center, Absatz mit Breite
+\begin{tabular}{lrcp{5cm}}
+123 & 456 & 789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\
+24 423 123 & 456 424234 &  32789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\
+\end{tabular}
+
+\subsection{Eine unschöne Tabelle}
+
+\begin{tabular}{|l|r|c|p{5cm}|} \hline
+Spalte 1 & Spalte 2  & Spalte 3 & Spalte 4 \\ \hline
+123 & 456 & 789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\ \hline
+24 423 123 & 456 424234 &  32789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\ \hline
+\end{tabular} 
+
+\blindtext
+
+\subsection{Eine schöne Tabelle (auch mit booktabs)}
+
+\begin{table}
+\caption{Meine schöne Tabelle}\label{tab:erste}
+\begin{center}
+\begin{tabular}{lrcp{5cm}} \toprule[2pt]
+\textbf{Spalte 1} & {\bfseries Spalte 2}  & \textbf{Spalte 3}  & \textbf{Spalte 4}  \\ \cmidrule[1pt](rl){1-4}
+123 & 456 & 789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\ \midrule
+24 423 123 & 456 424234 &  32789  & Hallo, ich bin ein Text, der umgebrochen wird nach ca. 5 Zentimetern. \\ \bottomrule[2pt]
+\end{tabular} 
+\end{center}
+\end{table}
+
+\blindtext
+
 \end{document}
