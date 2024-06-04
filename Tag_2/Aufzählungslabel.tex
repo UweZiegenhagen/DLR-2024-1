@@ -1,0 +1,38 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=half]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{amssymb} % für \maltese
+\usepackage{enumitem}
+
+\begin{document}
+
+\blindtext
+
+\setlist[itemize,1]{label={\color{gray!50}$\maltese$}}
+\setlist[itemize,2]{label={\color{red!50}$\maltese$}}
+
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+\begin{itemize}
+	\item aa
+	\item bb
+	\item cc
+	\item dd
+	\item ee
+	\item ff
+\end{itemize}
+	\item d
+	\item e
+	\item f
+\end{itemize}
+
+\blindtext
+
+
+\end{document}
