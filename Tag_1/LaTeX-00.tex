@@ -17,6 +17,10 @@
 % Farbunterstützung laden
 \usepackage{xcolor}
 
+%\todo , Option `disable ` zum Deaktivieren
+\usepackage[]{todonotes}
+\newcommand{\insertref}[1]{\todo[color=green!40]{Referenz #1 einbauen!}}
+
 % Schöne Tabellen
 \usepackage{booktabs}
 
@@ -28,6 +32,9 @@
 
 % kompaktere Aufzählungen und Auflistungen
 \usepackage{paralist}
+
+% Float ``here'' erzwingen
+\usepackage{here}
 
 %\usepackage{showlabels}
 \usepackage{showkeys}
@@ -74,6 +81,10 @@
 \newcommand{\dlr}[1]{Deutsche Zentrum für Luft- und Raumfahrt}
 \newcommand{\Dlr}[1]{Deutschem Zentrum für Luft- und Raumfahrt}
 
+% mit newcommand nur neue Befehle definierbar
+% sonst renewcommand
+%\renewcommand{\person}[1]{\textsc{\textcolor{green}{#1}}}
+
 \begin{document}
 \maketitle
 
@@ -82,6 +93,8 @@
 %\pagebreak % \newpage
 
 \listoffigures
+
+\listoftodos
 
 \section[Einleitung und Überblick]{Einleitung in das Thema unter Berücksichtigung der Literatur im In- und Ausland}\label{sec:Einleitung}
 \subsection{Literatur}
@@ -171,7 +184,9 @@ Spalte 1 & Spalte 2  & Spalte 3 & Spalte 4 \\ \hline
 
 \subsection{Eine schöne Tabelle (auch mit booktabs)}
 
-\begin{table}
+Float-Ausrichtung: b = bottom, t=top, p=Seite, h=here
+
+\begin{table}[H]
 \caption{Meine schöne Tabelle}\label{tab:erste}
 \begin{center}
 \begin{tabular}{lrcp{5cm}} \toprule[2pt]
@@ -181,6 +196,10 @@ Spalte 1 & Spalte 2  & Spalte 3 & Spalte 4 \\ \hline
 \end{tabular} 
 \end{center}
 \end{table}
+
+\blindtext
+
+\blindtext
 
 \blindtext
 
@@ -306,11 +325,13 @@ Spalte 1 	&	Spalte 2	&	Spalte 3	&	Spalte 4	&	Spalte 5	&	Spalte 6	&	Spalte 7	&	Sp
 	\item kleine 
 	\item Auflistung
 \end{compactenum}
+\insertref{Hallo DLR}
 
 \begin{compactdesc}
 \item[Apfel] ist Obst
 \item[Birne] ist auch Obst
 \item[Tomate] ist Gemüse
 \end{compactdesc}
+ \todo{Obst essen}
 
 \end{document}
