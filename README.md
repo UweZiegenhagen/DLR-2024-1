@@ -15,7 +15,7 @@ An jedem Tag treffen wir uns von 9--11 und 13--15 im virtuellen Kursraum, die Zu
 
 git installieren und dann auf der Kommandozeile
 
-git clone https://github.com/UweZiegenhagen/FUH-LaTeX-2024-1.git
+git clone https://github.com/UweZiegenhagen/DLR-2024-1.git
 
 Updates holt man wie folgt, lokal geänderte Dateien werden dabei überschrieben!
 
