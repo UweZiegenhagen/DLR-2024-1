@@ -22,10 +22,9 @@ Updates holt man wie folgt, lokal geänderte Dateien werden dabei überschrieben
 git fetch --all
 git reset --hard origin/main
 
-In den nächsten Monaten wird das Repository noch öffentlich zugänglich sein, 
+In den nächsten Wochen und Monaten wird das Repository noch öffentlich zugänglich sein, 
 irgendwann werde ich es auf privat setzen. Ihr könnt es gern forken, aber dann
-vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
-
+bitte in ein privates Repository, da ich gern Wildwuchs verhindern möchte.
 
 
 ## Was wird benötigt
@@ -34,7 +33,7 @@ vorzugsweise in ein privates Repo da ich gern Wildwuchs verhindern möchte.
 * TeX Live 2024 herunterladen und installieren von tug.org/texlive. Eine Anleitung (für TeX Live 2022, es hat sich aber nichts wesentliches geändert) habe ich unter https://www.youtube.com/watch?v=k9KhuZz7k-Q veröffentlicht.
 * Wenn ihr unter Linux arbeitet: Bitte nicht aus den Distributionsquellen nehmen, sondern auch von tug.org installieren. Das TeX Live in den Distributionen ist oftmals nicht aktuell. 
 * Mac-User installieren bitte MacTeX (auch auf der tug.org Seite frei verfügbar)
-* Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten und einfach zu bedienenden Editor, den ich persönlich gern benutze. 
+* Ein Editor zur Bearbeitung der TeX-Dateien: TeX Live bringt für Mac und Windows TeXworks mit, einen guten und einfach zu bedienenden Editor, den ich persönlich gern benutze.
 * Grundkenntnisse von Git bzw. Github sind nicht verkehrt, da alle meine Dateien im Github liegen.
 
 ## Kursinhalte
@@ -46,28 +45,29 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
 * Gibt es Vorlagen, die ihr nutzen müsst oder wollt?
 * Historie von TeX und LaTeX
-* Kurze Vorstellung von DANTE e.V.
 * Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
 * Klassen, Pakete, Umgebungen und Befehle
+* Schneller TeX mit Autohotkey & Co
 * Warum man article, report und book nicht unbedingt nutzen sollte -- die KOMA-Klassen
 * Strukturierte Dokumente, ``\chapter``, ``\section`` & Co, Inhaltverzeichnisse
 * Referenzen mit ``\label`` und ``\ref``
 * Einfache Bilder einbetten, Bilderverzeichnisse
 * Einfacher Tabellensatz und Tabellenverzeichnisse
-* Float-Objekte
+* Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
+* Float-Objekte bei Tabellen und Bildern
 
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
 * Wiederholung vom 1. Tag, Fragen beantworten
-* Schneller TeX mit Autohotkey & Co
+* Tabellensatz mit multicolumn und multirow
 * LaTeX automatisieren mit ``Arara``
-* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
-* Mathematiksatz (mit ``amsmath``)
-* Das Paket ``nicematrix``
 * Einheitensatz mit ``siunitx``
+* Mathematiksatz (ohne und mit ``amsmath``)
 * Präsentationen mit ``Beamer``
 * Briefe setzen mit ``scrlttr2``
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
+* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
+
 
 ### Tag 3 - Bibliografien und Präsentationen
 
@@ -87,8 +87,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * Fragen zum letzten Mal?
-* Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
-* Kopf/Fußzeilen anpassen mit ``scrpage`` => Option ``automark`` hat gefehlt
+* Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehrere Schriftarten im Dokument
 * Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
