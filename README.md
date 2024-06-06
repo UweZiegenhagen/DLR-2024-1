@@ -65,9 +65,9 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Mathematiksatz (ohne und mit ``amsmath``) ✓
 * Präsentationen mit ``Beamer`` ✓
 * Briefe setzen mit ``scrlttr2`` ✓
-* Poster erstellen mit LaTeX
+* Poster erstellen mit LaTeX ✓
 * Lebensläufe erstellen mit LaTeX ✓
-* Quellcode-Listings einfügen mit dem ``Listings`` Paket
+* Quellcode-Listings einfügen mit dem ``Listings`` Paket ✓
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
 
 
