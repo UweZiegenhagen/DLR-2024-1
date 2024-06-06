@@ -2,6 +2,8 @@
  
 \usepackage{multirow}
 \usepackage{tabularray}
+%\usepackage{booktabs}
+\UseTblrLibrary{booktabs} 
 
 \begin{document}
  
@@ -17,28 +19,28 @@ s	&	t	&	u	&	v	&	w	&	x	\\ \hline
 
 \section{Multicolumn}
  
- \begin{tabular}{|c|c|c|c|c|c|} \hline
- \multicolumn{2}{|c|}{a}  &	c	&	d	&	e	&	f	\\ \hline
+ \begin{tabular}{|c|c|c|c|c|c|} \toprule
+ \multicolumn{2}{|c|}{a}   &	c	&	d	&	e	&	f	\\ \midrule[2pt]
 g	&	h	&	i	&	j	&	k	&	l	\\ \hline
 m	&	n	&	o	&	p	&	q	&	r	\\ \hline
-s	&	t	&	u	&	v	&	w	&	x	\\ \hline
+s	&	t	&	u	&	v	&	w	&	x	\\ \bottomrule
 \end{tabular}\vspace*{1em}
  
 \section{Multirow}
 
 In die obere *-Zelle kommt der \texttt{\textbackslash multirow} Befehl, die untere *-Zelle wird geleert.
  
-\begin{tabular}{|c|c|c|c|c|c|} \hline
-a   &  b   &	c	&	d	&	e	&	f	\\ \hline
+\begin{tabular}{|c|c|c|c|c|c|} \toprule
+a   &  b   &	c	&	d	&	e	&	f	\\ \midrule
 g	&	h	&	i	&	j	&	k	&	l	\\ \hline
 m	&	n	&	o	&	p	&	*	&	r	\\ \hline
-s	&	t	&	u	&	v	&	*	&	x	\\ \hline
+s	&	t	&	u	&	v	&	*	&	x	\\ \bottomrule
 \end{tabular}
  
 \begin{tabular}{|c|c|c|c|c|c|} \hline
 a  &   b   &	c	&	d	&	e	&	f	\\ \hline
 g	&	h	&	i	&	j	&	k	&	l	\\ \hline
-m	&	n	&	o	&	p	&	\multirow[c]{2}{*}{q} 	&	r \\ \cline{1-4} \cline{6-6}
+m	&	n	&	o	&	p	&	\multirow[c]{2}{*}{q} 	&	r \\  \cline{1-4} \cline{6-6}
 s	&	t	&	u	&	v	&		&	x	\\ \hline
 \end{tabular}
 
@@ -46,17 +48,16 @@ s	&	t	&	u	&	v	&		&	x	\\ \hline
 
 Umsetzung mittels tabularray-Paket.
 
-
 \begin{tblr}{
   colspec={|c|c|c|c|c|c|},
-  hline{1,2,3,4,5},
+  %hline{1,2,3,4,5},
   cell{1}{1} = {c=2}{c}, % multicolumn
   cell{3}{5} = {r=2}{m}, % multirow
-}
- a	&	b	&	c	&	d	&	e	&	f	\\ 
+} \toprule[2pt]
+ a	&	b	&	c	&	d	&	e	&	f	\\ \midrule
 g	&	h	&	i	&	j	&	k	&	l	\\ 
-m	&	n	&	o	&	p	&	q	&	r	\\ 
-s	&	t	&	u	&	v	&	w	&	x	\\ 
+m	&	n	&	o	&	p	&	q	&	r	\\ \cmidrule{1-4} \cmidrule{6-6}  
+s	&	t	&	u	&	v	&	w	&	x	\\ \bottomrule
 \end{tblr}
 
 
