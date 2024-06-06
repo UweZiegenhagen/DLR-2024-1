@@ -66,7 +66,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Präsentationen mit ``Beamer`` ✓
 * Briefe setzen mit ``scrlttr2`` ✓
 * Poster erstellen mit LaTeX
-* Lebensläufe erstellen mit LaTeX
+* Lebensläufe erstellen mit LaTeX ✓
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
 
@@ -78,7 +78,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Seitenränder einstellen mit ``geometry``
 * Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehr zum Bilder einbetten: ``subcaption`` 
-* Mehr zu Referenzen
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
