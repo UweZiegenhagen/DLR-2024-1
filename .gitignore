@@ -8,3 +8,7 @@
 *.tdo
 *.nav
 *.snm
+*.pygstyle
+*.pygtex
+*.plog
+*.pyy
