@@ -42,29 +42,30 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 1 - Grundlagen
 
-* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
-* Gibt es Vorlagen, die ihr nutzen müsst oder wollt?
-* Historie von TeX und LaTeX
-* Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
-* Klassen, Pakete, Umgebungen und Befehle
-* Schneller TeX mit Autohotkey & Co
-* Warum man article, report und book nicht unbedingt nutzen sollte -- die KOMA-Klassen
-* Strukturierte Dokumente, ``\chapter``, ``\section`` & Co, Inhaltverzeichnisse
-* Referenzen mit ``\label`` und ``\ref``
-* Einfache Bilder einbetten, Bilderverzeichnisse
-* Einfacher Tabellensatz und Tabellenverzeichnisse
-* Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket
-* Float-Objekte bei Tabellen und Bildern
+* Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele? ✓
+* Gibt es Vorlagen, die ihr nutzen müsst oder wollt? ✓
+* Historie von TeX und LaTeX ✓
+* Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument ✓
+* Klassen, Pakete, Umgebungen und Befehle ✓
+* Schneller TeX mit Autohotkey & Co ✓
+* Warum man article, report und book nicht unbedingt nutzen sollte -- die KOMA-Klassen ✓
+* Strukturierte Dokumente, ``\chapter``, ``\section`` & Co, Inhaltverzeichnisse ✓
+* Referenzen mit ``\label`` und ``\ref``, prettyref ✓
+* Einfache Bilder einbetten, Bilderverzeichnisse ✓
+* Einfacher Tabellensatz und Tabellenverzeichnisse ✓
+* Einzelne Seiten drehen im PDF mit dem ``pdflscape`` Paket ✓
+* Float-Objekte bei Tabellen und Bildern ✓
 
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
-* Wiederholung vom 1. Tag, Fragen beantworten
-* Tabellensatz mit multicolumn und multirow
-* LaTeX automatisieren mit ``Arara``
-* Einheitensatz mit ``siunitx``
-* Mathematiksatz (ohne und mit ``amsmath``)
+* Wiederholung vom 1. Tag, Fragen beantworten ✓
+* Tabellensatz mit multicolumn und multirow ✓
+* LaTeX automatisieren mit ``Arara`` ✓
+* Einheitensatz mit ``siunitx`` ✓
+* Mathematiksatz (ohne und mit ``amsmath``) ✓
 * Präsentationen mit ``Beamer``
 * Briefe setzen mit ``scrlttr2``
+* Lebensläufe erstellen mit LaTeX
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
 
@@ -73,7 +74,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * Zusammenfassung vom 2. Termin, Wiederholung
 * Flyer basteln mit ``leaflet``
-* Lebensläufe erstellen mit LaTeX
 * Seitenränder einstellen mit ``geometry``
 * Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehr zum Bilder einbetten: ``subcaption`` 
