@@ -1,0 +1,63 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{siunitx}
+\usepackage{booktabs}
+
+\begin{document}
+
+\ang{90}
+
+\num{54142412,90}
+
+\num{54142412.90}
+
+\unit{\meter\per\square\second}
+
+\qty{299295959.81}{\meter\per\square\second}
+
+$299295959.81 ms^{-2}$ %FALSCH!!!
+
+\numlist{10;20;30;40;50}
+
+\numrange{10}{50}
+
+\begin{table}[h]
+\begin{center}
+\caption{Standard behaviour of the \texttt{S} column type.%
+\label{tab:S:standard}}
+\begin{tabular}{@{}S@{}}
+\toprule
+{Some Values} \\
+\midrule
+2.3456 \\
+34.2345 \\
+-6.7835 \\
+90.473 \\
+5642.5 \\
+1.2e3 \\
+e4 \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\end{document}
+
+• \ang[⟨options⟩]{⟨angle⟩}
+• \num[⟨options⟩]{⟨number⟩}
+• \unit[⟨options⟩]{⟨unit⟩}
+• \qty[⟨options⟩]{⟨number⟩}{⟨unit⟩}
+• \numlist[⟨options⟩]{⟨numbers⟩}
+• \numproduct[⟨options⟩]{⟨numbers⟩}
+• \numrange[⟨options⟩]{⟨numbers⟩}{⟨number2⟩}
+• \qtylist[⟨options⟩]{⟨numbers⟩}{⟨unit⟩}
+• \qtyproduct[⟨options⟩]{⟨numbers⟩}{⟨unit⟩}
+• \qtyrange[⟨options⟩]{⟨number1⟩}{⟨number2⟩}{⟨unit⟩}
+• \complexnum[⟨options⟩]{⟨number⟩}
+• \complexqty[⟨options⟩]{⟨number⟩}{⟨unit⟩}
+• \sisetup{⟨options⟩}
+• \tablenum[⟨options⟩]{⟨number⟩}
