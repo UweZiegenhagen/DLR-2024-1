@@ -1,0 +1,13 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{ifthen}
+
+\begin{document}
+
+\newboolean{sonntag}
+\setboolean{sonntag}{false}
+
+\ifthenelse{\boolean{sonntag}}{Sonntag}{Samstag} ist mein Lieblingstag.
+
+
+\end{document}

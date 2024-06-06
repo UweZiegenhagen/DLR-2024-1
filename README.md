@@ -63,8 +63,9 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * LaTeX automatisieren mit ``Arara`` ✓
 * Einheitensatz mit ``siunitx`` ✓
 * Mathematiksatz (ohne und mit ``amsmath``) ✓
-* Präsentationen mit ``Beamer``
-* Briefe setzen mit ``scrlttr2``
+* Präsentationen mit ``Beamer`` ✓
+* Briefe setzen mit ``scrlttr2`` ✓
+* Poster erstellen mit LaTeX
 * Lebensläufe erstellen mit LaTeX
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
@@ -87,6 +88,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * Fragen zum letzten Mal?
+* Brief-Design anpassen
 * Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehrere Schriftarten im Dokument
 * Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``

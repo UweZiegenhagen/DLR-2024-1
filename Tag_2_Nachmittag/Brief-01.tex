@@ -1,0 +1,26 @@
+\documentclass[12pt,ngerman]{scrlttr2}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage{palatino} % Schriftart Wechsel auf Palatino
+
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromaddress}{Arme-Enten-Weg 1, 13456 Entenhausen}
+\setkomavar{subject}{Ausstehender Lohn}
+\setkomavar{yourmail}{05.06.2024}
+\setkomavar{yourref}[Mitarbeiternummer]{12345-78-8}
+\setkomavar{myref}[Mahnnummer]{3}
+
+
+\begin{document}
+
+\begin{letter}{Dagobert Duck \\ Am Geldspeicher 1 \\ 12345 Entenhausen}
+\opening{Verehrter Onkel Dagobert,}
+
+\blindtext[3]
+
+\closing{Mit freundlichen Grüßen,}
+\encl{Gehaltsabrechnung Januar \\ Gehaltsabrechnung Februar}
+\end{letter}
+
+\end{document}
