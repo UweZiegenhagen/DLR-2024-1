@@ -1,5 +1,10 @@
 \documentclass[12pt,ngerman]{europecv}
 
+\usepackage{ifthen}
+
+\newboolean{konferenzen}
+\setboolean{konferenzen}{true}
+
 \usepackage{graphicx}
 \usepackage{hyperref}
 \makeatletter
@@ -15,12 +20,29 @@
 \begin{europecv}
 \ecvpersonalinfo
 
+\ecvitem{}{}
 \ecvsection{Work Experience}
 
 \ecvitem*{Dates (from--to)}{\textbf{1/2020--present}}
 \ecvitem*{Name of Employer}{Duck Industries}
 \ecvitem*{Type of business or sector}{Banking}
 \ecvitem*{Main activities and responsibilities}{CED}
+
+\ifthenelse{\boolean{konferenzen}}{
+\ecvsection{Attended Conferences}
+\ecvitem{}{2000: Compstat Conference in Utrecht, Netherlands}
+\ecvitem{}{2002: Compstat Conference in Berlin, Germany (Co-Organizer)}
+\ecvitem{}{2004: Interface Conference in Baltimore, USA}
+\ecvitem{}{2005: ISI Conference in Sydney, Australia}
+\ecvitem{}{2005: ISBIS Conference in Cairns, Australia}
+\ecvitem{}{2006: Compstat Conference in Rome, Italy}
+\ecvitem{}{2007: Statistical Computing in Reisensburg, Germany}
+\ecvitem{}{2007: Statistische Woche in Kiel, Germany}
+\ecvitem{}{2007: ISI Conference in Lisbon, Portugal}
+\ecvitem{}{2008: ISBIS Conference in Prague, Czech Republic}
+\ecvitem{}{2010: \TeX{} User Group Meeting in San Francisco, USA}
+\ecvitem{}{2018: 6th International IBM Cloud Academy Conference, Tokyo, Japan}}
+
 
 \end{europecv}
 \end{document}
