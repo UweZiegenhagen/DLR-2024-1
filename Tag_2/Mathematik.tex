@@ -7,6 +7,10 @@
 \usepackage{amsmath, amssymb}
 \usepackage{siunitx}
 
+\makeatletter % Mach das @ zu einem normalen Zeichen
+\newcommand{\avg}{\mathop{\operator@font avg}}
+\makeatother
+
 \begin{document}
 
 \blindtext
@@ -33,11 +37,85 @@ Abgesetzte Mathematik im TeX-Modus geht so
 - \frac{p}{2} \pm \sqrt{\left(\frac{p}{2}\right)^2 - q}
 \end{equation}
 
-\begin{equation}
+\begin{equation}\label{eq:gleichunga}
 \sum_{i=1}^\infty x_i \pi \alpha \prod = \qty{4132534.43534}{\AA}
 \end{equation}
 
 
+
+\begin{equation}
+a \Delta \nabla c  \partial 
+\end{equation}
+
+% Text in Formeln via \text{}, amsmath dazu laden!
+\begin{equation}
+\avg \sin \cos \tan \overbrace{a^2 + b^2}^{3123} = \underbrace{c^2 + c^2 + c^2}_{\text{fdsf}}
+\end{equation}
+
+
+
+Siehe Gleichung \ref{eq:gleichunga} auf Seite \pageref{eq:gleichunga}
+
 Sage zu dir in der Morgenstunde: Heute werde ich mit einem unbedachtsamen, undankbaren, unverschämten, betrügerischen, neidischen, ungeselligen Menschen zusammentreffen. Alle diese Fehler sind Folgen ihrer Unwissenheit hinsichtlich des Guten und des Bösen.Es war ein stoischer Grundsatz, dessen Ursprung auf Zeno zurückgeführt wurde, daß die meisten Menschen nur aus Dummheit böse sind. Ich aber habe klar erkannt, daß das Gute seinem Wesen nach schön und das Böse häßlich ist,Diesen Satz hatte Zeno aufgestellt, aber dieselbe Lehre findet sich schon bei Plato. daß der Mensch, der gegen mich fehlt, in Wirklichkeit mir verwandt ist, nicht weil wir von demselben Blut, derselben Abkunft wären, sondern wir haben gleichen Anteil an der Vernunft, der göttlichen Bestimmung. Keiner kann mir Schaden zufügen, denn ich lasse mich nicht zu einem Laster verführen. Ebensowenig kann ich dem, der mir verwandt ist, zürnen oder ihn hassen; denn wir sind zur gemeinschaftlichen Wirksamkeit geschaffen, wie die Füße, die Hände, die Augenlider, wie die obere und untere Kinnlade.Derartige Vergleiche waren bei den Alten nichts Seltenes. Darum ist die Feindschaft der Menschen untereinander wider die Natur; Unwillen aber und Abscheu in sich fühlen ist eine Feindseligkeit.
+
+\section{Matrix-ähnliche Konstrukte (Standard-LaTeX)}
+
+\begin{eqnarray} % LaTeX, besser nutzt man AMSmath
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{eqnarray}
+
+\begin{eqnarray*} % LaTeX, besser nutzt man aber ams
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{eqnarray*}
+
+\[
+\begin{array}{lcr} % LaTeX
+y &=& d \\
+y &=& c_x +d \\
+\sin x &=& \cos x \times y + \alpha - \beta
+\end{array}
+\]
+
+\[ % LaTeX 
+\bordermatrix{
+   & 1 & 2 & 3 \cr
+1 & 4 & 2 & 156 \cr
+2 & 5 & 33 & 56 \cr
+3 & 6 & 2 & 88 \cr
+}
+\]
+
+\section{AMSMAth}
+
+\begin{equation}
+P_{r-j}=\begin{cases}
+0& \text{if $r-j$ is odd},\\
+r!\,(-1)^{(r-j)/2}& \text{if $r-j$ is even}.
+\end{cases}
+\end{equation}
+
+\begin{align} % mit Nummern 
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align}
+
+\begin{align*} % ohne Nummern 
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align*}
+
+\begin{alignat}{3}
+a &= c \cdot x &= x\times y \leq 567 \\
+a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
+\end{alignat}
+
+\begin{alignat*}{3}
+a &= c \cdot x &= x\times y \leq 567 \\
+a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
+\end{alignat*}
 
 \end{document}
