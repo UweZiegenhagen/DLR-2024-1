@@ -6,6 +6,8 @@
 \usepackage{blindtext}
 \usepackage{amsmath, amssymb}
 \usepackage{siunitx}
+\usepackage{esvect}
+\usepackage[standard,thmmarks]{ntheorem}
 
 \makeatletter % Mach das @ zu einem normalen Zeichen
 \newcommand{\avg}{\mathop{\operator@font avg}}
@@ -89,6 +91,10 @@ y &=& c_x +d \\
 }
 \]
 
+\begin{equation}
+\zeta = \frac{\delta}{\sqrt{\delta^{2} + (2 \pi)^2}} \text{, mit} \, \delta = \ln        \frac{x_0}{x_1}
+\end{equation}
+
 \section{AMSMAth}
 
 \begin{equation}
@@ -117,5 +123,113 @@ a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
 a &= c \cdot x &= x\times y \leq 567 \\
 a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
 \end{alignat*}
+
+\subsection{Diverse Matrix Konstrukte}
+
+
+
+\[% Version ohne Klammern
+\begin{matrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{matrix}
+\]
+
+
+\[% mit runden Klammern (parentheses)
+\begin{pmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{pmatrix}
+\]
+
+\[% mit eckigen Klammern
+\begin{bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{bmatrix}
+\]
+
+\[% mit geschweiften Klammern
+\begin{Bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Bmatrix}
+\]
+
+
+\[% mit senkrechten Strichen 
+\begin{vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{vmatrix}
+\]
+
+\[% mit doppelten senkrechten Strichen 
+\det 
+\begin{Vmatrix} 
+\ddots  & 0 & \vdots \\ 
+0 & \cdots & \dots \\ 
+0 & 0 & 1 \\ 
+\end{Vmatrix}
+\text{ist eine Matrix}
+\]
+
+\section{Abstände}
+
+% Quelle overleaf
+
+\begin{align*}
+f(x) &= x^2\! +3x\! +2 \\
+f(x) &= x^2+3x+2 \\
+f(x) &= x^2\, +3x\, +2 \\
+f(x) &= x^2\: +3x\: +2 \\
+f(x) &= x^2\; +3x\; +2 \\
+f(x) &= x^2\ +3x\ +2 \\
+f(x) &= x^2\quad +3x\quad +2 \\
+f(x) &= x^2\qquad +3x\qquad +2
+\end{align*}
+
+\section{Vektoren}
+
+\begin{equation} % esvect laden für \vv
+\vec{a} \Rightarrow \vec{abc} \rightarrow  \vv{abc}
+\end{equation}
+
+\section{Theoreme, Beweise etc. mit ntheorem}
+
+\listtheorems{theorem,lemma}
+
+\begin{proof}
+fsdfsd
+\end{proof}
+
+\begin{theorem}
+fsdfsd
+\end{theorem}
+
+\begin{lemma}
+fsdfsd
+\end{lemma}
+
+\begin{corollary}
+fsdfsd
+\end{corollary}
+
+
+% https://tex.stackexchange.com/questions/45454/math-text-scaling-in-latex
+\begin{equation}
+\alpha = \frac{\frac{\frac{\pi^2}{a}}{\frac{\pi^2}{a}}}{\frac{x_2}{\pi}}
+\rightarrow
+\dfrac{\dfrac{\dfrac{\pi^2}{a}}{\dfrac{\pi^2}{a}}}{\dfrac{x_2}{\pi}}
+\rightarrow
+\tfrac{\tfrac{\tfrac{\pi^2}{a}}{\tfrac{\pi^2}{a}}}{\tfrac{x_2}{\pi}}
+\end{equation}
+
 
 \end{document}
