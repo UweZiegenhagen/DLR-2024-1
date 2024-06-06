@@ -1,0 +1,80 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{listings}
+\usepackage{palatino}
+
+\usepackage{xcolor}
+\definecolor{hellgelb}{rgb}{1,1,0.8}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+\lstset{
+basicstyle=\ttfamily\scriptsize,language=Python,
+    float=hbp,%
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\bfseries\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+  %  frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    backgroundcolor=\color{hellgelb}, %\color[gray]{0.95}
+    breakautoindent=true, %
+    captionpos=b,%
+morekeywords={read_excel,sort_values,reset_index,rename,shift,loc,concat,fillna,iterrows}
+}
+
+
+\begin{document}
+
+\begin{lstlisting}[label={lis:para},caption={Hallo Listings}]
+import pandas as pd
+import Levenshtein
+ 
+df = pd.read_excel('Daten.xlsx')
+df = df.sort_values(by=['Name'])
+df = df.reset_index(drop=True)
+ 
+dfs= df.shift() # Shift df by one row
+dfs = dfs.rename(columns={'Name': 'Nameshifted'})
+ 
+df_combined = pd.concat([df,dfs],axis=1) # combine original and shifted df
+df_combined = df_combined.fillna('') # remove NaNs
+ 
+for index, row in df_combined.iterrows():
+    df_combined.loc[index,'Ratio'] = (Levenshtein.ratio(row['Name'], row['Nameshifted']))
+    df_combined.loc[index,'Distance'] = (Levenshtein.distance(row['Name'], row['Nameshifted']))    
+ 
+print(df_combined)
+\end{lstlisting}
+
+\lstinputlisting[label={lis:para3},caption={Paramiko Code zum Upload von Dateien auf einen SFTP-Server}]{para.py}
+
+Siehe Zeile 5 in Listing \ref{lis:para}
+
+\lstinputlisting[linerange={5-15},label={lis:para2},caption={Paramiko Code zum Upload von Dateien auf einen SFTP-Server}]{para.py}
+
+
+
+
+\end{document}
