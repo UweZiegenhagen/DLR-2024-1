@@ -68,12 +68,12 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Poster erstellen mit LaTeX ✓
 * Lebensläufe erstellen mit LaTeX ✓
 * Quellcode-Listings einfügen mit dem ``Listings`` Paket ✓
-* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``
-
 
 ### Tag 3 - Bibliografien und Präsentationen
 
-* Zusammenfassung vom 2. Termin, Wiederholung
+* Zusammenfassung vom 2. Termin, Fragen beantworten
+* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten
+* Titelseiten erstellen, die ``titlepage`` Umgebung
 * Flyer basteln mit ``leaflet``
 * Seitenränder einstellen mit ``geometry``
 * Kopf/Fußzeilen anpassen mit ``scrpage``
@@ -88,7 +88,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * Fragen zum letzten Mal?
 * Brief-Design anpassen
-* Kopf/Fußzeilen anpassen mit ``scrpage``
 * Mehrere Schriftarten im Dokument
 * Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
