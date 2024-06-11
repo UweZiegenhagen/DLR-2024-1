@@ -71,12 +71,12 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 3 - Bibliografien und Präsentationen
 
-* Zusammenfassung vom 2. Termin, Fragen beantworten
-* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten
-* Titelseiten erstellen, die ``titlepage`` Umgebung
-* Flyer basteln mit ``leaflet``
-* Seitenränder einstellen mit ``geometry``
-* Kopf/Fußzeilen anpassen mit ``scrpage``
+* Zusammenfassung vom 2. Termin, Fragen beantworten ✓
+* Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten ✓
+* Titelseiten erstellen, die ``titlepage`` Umgebung ✓
+* Flyer basteln mit ``leaflet`` ✓
+* Seitenränder einstellen mit ``geometry`` ✓
+* Kopf/Fußzeilen anpassen mit ``scrpage`` ✓
 * Mehr zum Bilder einbetten: ``subcaption`` 
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
