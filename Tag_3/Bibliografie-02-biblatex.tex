@@ -37,8 +37,15 @@
 }
 \begin{document}
 
-\blindtext \cite{Knuth1984} and \cite{Buchin2023} have shown, that elliptic curves are useful in computing. \cite{Yu2021} also showed this.
+\blindtext \cite{Knuth1984}, \cite{Knuth1984}  and \cite{Buchin2023} have shown, that elliptic curves are useful in computing. \cite{Yu2021} also showed this   .\footnote{\blindtext}
 
+\cite{Ziegenhagen2022}
+
+parencite \parencite{Knuth1984}
+
+Uwe Ziegenhagen\footcite{Ziegenhagen2022}
+
+citeauthor, citetitle und citeyear kombiniert: \citeauthor{Knuth1984} hat in seinem im Jahre \citeyear{Knuth1984} erschienenen Buch \citetitle{Knuth1984} bewiesen, dass \(p = np \)
 
 \printbibliography 
 
