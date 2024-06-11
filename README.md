@@ -87,12 +87,13 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * Fragen zum letzten Mal?
-* Brief-Design anpassen
-* Mehrere Schriftarten im Dokument
 * Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Syntaxhighlighting mit pygments
+* Kombination von LaTeX und Python
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
+* Brief-Design anpassen
+* Mehrere Schriftarten im Dokument
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
 
 ## Literaturempfehlungen
