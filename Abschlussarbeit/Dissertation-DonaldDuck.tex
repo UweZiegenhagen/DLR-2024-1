@@ -4,10 +4,20 @@
 \documentclass[12pt,ngerman,parskip=half]{scrreprt}
 \input{preamble}
 
+\usepackage[pagewise]{lineno}
+\linenumbers
+
+\usepackage[automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
 \usepackage{blindtext}
 
 \author{Donald Duck}
 \title{Dissertation}
+
+% Wenn man nur einzelne Kapitel übersetzen möchte,
+% die Seitenzahlen aber korrekt sein sollen.
+%\includeonly{Analyse,Fazit}
 
 \begin{document}
 \maketitle
@@ -23,5 +33,6 @@
 \include{Analyse}
 
 \include{Fazit}
+
 
 \end{document}
