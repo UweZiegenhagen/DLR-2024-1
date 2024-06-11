@@ -7,6 +7,19 @@
 
 \usepackage{microtype} % Mikrotypografie
 
+\usepackage[automark]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+% In eckiger Klammer: wird auf Kapitelanfangsseite gesetzt
+% in geschweifter Klammer: kommt auf alle nicht-Kapitelanfangsseiten
+\ihead[]{\headmark} % innerer Kopf
+\ifoot[]{} % innere Fußzeile
+\chead[]{} % center Kopf
+\cfoot[]{} % center Foot
+\ohead[]{} % äußerer Kopf
+\ofoot[\pagemark]{\pagemark} % äußerer Fuß
+
+
 \usepackage{hyperref} % klickbare Links, als letztes laden
 \hypersetup{
     bookmarks=true,                     % show bookmarks bar
