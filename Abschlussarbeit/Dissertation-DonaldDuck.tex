@@ -7,22 +7,17 @@
 
 \input{preamble}
 
-\author{Donald Duck}
-\title{Dissertation}
-
 \usepackage[pagewise]{lineno}
 \linenumbers
 
 \usepackage{blindtext}
-
-
-
 % Wenn man nur einzelne Kapitel übersetzen möchte,
 % die Seitenzahlen aber korrekt sein sollen.
 %\includeonly{Analyse,Fazit}
 
 \begin{document}
-\maketitle
+
+\input{titlepage}
 
 \frontmatter
 \tableofcontents
@@ -32,6 +27,7 @@
 \listoftables
 
 \mainmatter
+
 \include{Einleitung}
 
 \include{Analyse}
