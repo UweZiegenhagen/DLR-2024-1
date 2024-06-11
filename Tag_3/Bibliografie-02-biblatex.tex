@@ -12,9 +12,32 @@
 %Bibliografie-Zeug
 \usepackage[style=authortitle-icomp,backend=biber]{biblatex}
 \addbibresource{Literatur.bib}
+
+
+\usepackage{hyperref} % klickbare Links, als letztes laden
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={Dissertation},                        % title
+    pdfauthor={Donald Duck},                 % author
+    pdfsubject={Raketen},                   % subject of the document
+    pdfcreator={Donald Duck},                   % creator of the document
+    pdfproducer={LaTeX},             % producer of the document
+    pdfkeywords={Rockets, Fuel},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
 \begin{document}
 
-\blindtext \cite{Knuth1984}
+\blindtext \cite{Knuth1984} and \cite{Buchin2023} have shown, that elliptic curves are useful in computing. \cite{Yu2021} also showed this.
 
 
 \printbibliography 
