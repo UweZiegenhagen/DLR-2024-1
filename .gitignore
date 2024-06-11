@@ -15,3 +15,7 @@
 *.lot
 *.lot
 *.sav
+*.bbl
+*.bcf
+*.blg
+*.xml
