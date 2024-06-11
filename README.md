@@ -79,7 +79,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Kopf/Fußzeilen anpassen mit ``scrpage`` ✓
 * Mehr zum Bilder einbetten: ``subcaption`` 
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
-* Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
+* Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen ✓
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
 * Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
