@@ -76,8 +76,6 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Titelseiten erstellen, die ``titlepage`` Umgebung ✓
 * Flyer basteln mit ``leaflet`` ✓
 * Seitenränder einstellen mit ``geometry`` ✓
-* Kopf/Fußzeilen anpassen mit ``scrpage`` ✓
-* Mehr zum Bilder einbetten: ``subcaption`` 
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen ✓
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
@@ -87,8 +85,9 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 4 - TikZ und Sonstiges
 
 * Fragen zum letzten Mal?
-* Grafiken erstellen mit LaTeX-Paketen, kurze Einführung in ``TikZ``
+* Wiederholung Bibliografie
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
+* Grafiken erstellen mit LaTeX-Paketen, Einführung in ``TikZ``
 * Syntaxhighlighting mit pygments
 * Kombination von LaTeX und Python
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
