@@ -4,6 +4,9 @@
 \usepackage{blindtext}
 \usepackage{tabularray}
 
+\usepackage{eso-pic,rotating,graphicx}
+\usepackage{transparent}
+
 \setkomavar{fromname}{Max Mustermann}
 \setkomavar{fromaddress}{Musterweg 1, 12346 Musterstadt}
 \setkomavar{yourref}{FA2021/20897-1}
@@ -11,8 +14,6 @@
 \setkomavar{subject}{Übersendung von Unterlagen}
 \setkomavar{myref}[Steuernummer]{20897}
 
-\usepackage[usefilenames,RMstyle=Light,SSstyle=Light,TTstyle=Light,DefaultFeatures={Ligatures=Common}]{plex-otf} 
-\renewcommand*\familydefault{\sfdefault}
 
 \pagestyle{myheadings}
 \setplength{firstfootvpos}{27.5cm}
@@ -30,6 +31,7 @@
 \setkomavar{nextfoot}{\thepage/\letterlastpage}
 
 \begin{document}
+\AddToShipoutPicture{\put(100,200){{\transparent{0.2}\includegraphics[width=\textwidth]{../Bilder/Katze}}}}
 \begin{letter}{Finanzamt Musterstadt \\ Musterweg 1 \\ 12345 Musterstadt}
 \opening{Sehr geehrte Damen und Herren,}
 

@@ -92,8 +92,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Mehrere Schriftarten im Dokument  ✓
 * Syntaxhighlighting mit minted/pygments ✓
 * Kombination von LaTeX und Python ✓
-* Brief-Design anpassen
-* Folien-Design anpassen
+* Brief-Design anpassen 
+* Folien-Design anpassen 
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
 
 ## Literaturempfehlungen
