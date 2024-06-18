@@ -77,6 +77,9 @@ Relative Koordinaten: ausgehend von Punkt 1,1 gehe 5 Einheiten nach rechts und e
 \section{Nodes und Coordinates}
 
 \begin{tikzpicture}
+[mybox/.style = {rectangle, draw=blue,thick, rounded corners},
+myredbox/.style = {mybox,draw=red},
+]
 \draw[step=1cm,blue,very thin] (0,0) grid (15,10);
 
 \node (a) at (1,1){A}; % Label muss angegeben werden, kann leer sein
@@ -87,7 +90,13 @@ Relative Koordinaten: ausgehend von Punkt 1,1 gehe 5 Einheiten nach rechts und e
 \coordinate (d) at (6,4);
 \draw (c) -- (d);
 
-\node[rectangle,draw=red] (e) at (7,7){DLR};
+\node[mybox] (e) at (7,7){DLR};
+
+\node[myredbox] (f) at (8,8){ESA};
+
+\draw[->] (e) -- (f);
+
+\draw[->] (e.north) -- (f.south west);
 
 \end{tikzpicture}
 
