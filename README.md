@@ -88,10 +88,10 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Wiederholung Bibliografie ✓
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket ✓
 * Grafiken erstellen mit LaTeX-Paketen, Einführung in ``TikZ`` ✓
-* Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
-* Mehrere Schriftarten im Dokument
-* Syntaxhighlighting mit minted/pygments
-* Kombination von LaTeX und Python
+* Editoren: ``TeXworks`` versus ``Visual Studio Code`` ✓
+* Mehrere Schriftarten im Dokument  ✓
+* Syntaxhighlighting mit minted/pygments ✓
+* Kombination von LaTeX und Python ✓
 * Brief-Design anpassen
 * Folien-Design anpassen
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?

@@ -19,3 +19,8 @@
 *.bcf
 *.blg
 *.xml
+*.stdout
+*.pytxmcr
+*.pytxpyg
+*.pkl
+*.pytxcode
