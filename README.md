@@ -84,8 +84,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 ### Tag 4 - TikZ und Sonstiges
 
-* Fragen zum letzten Mal?
-* Wiederholung Bibliografie
+* Fragen zum letzten Mal? ✓
+* Wiederholung Bibliografie ✓
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Grafiken erstellen mit LaTeX-Paketen, Einführung in ``TikZ``
 * Syntaxhighlighting mit minted/pygments

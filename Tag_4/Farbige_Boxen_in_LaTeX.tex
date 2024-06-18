@@ -1,0 +1,84 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+\usepackage{blindtext}
+
+\newmdtheoremenv [%
+outerlinewidth = 2 ,%
+roundcorner = 10 pt ,%
+leftmargin = 40 ,%
+rightmargin = 40 ,%
+backgroundcolor = yellow!30 ,%
+outerlinecolor = blue!70!black ,%
+innertopmargin = \topskip ,%
+splittopskip = \topskip ,%
+ntheorem = true ,%
+] { theorem}{ Theorem } [section]
+
+\begin{document}
+
+\section{mdframed}
+
+\begin { theorem} [Pythagorean theorem]
+\blindtext
+\end{ theorem}
+
+\begin{mdframed}
+Hallo Welt!\newline Foobar
+\end{mdframed}
+ 
+\newmdenv [linecolor=red, frametitle=Infobox,leftmargin=3cm,rightmargin=3cm]{infobox}
+ 
+\begin{infobox}[ backgroundcolor=yellow ]
+foo
+foo
+foo
+\end{infobox}
+ 
+\begin{verbatim}
+Hallo
+Welt
+\end{verbatim}
+ 
+\surroundwithmdframed[linewidth=2pt ]{verbatim}
+ 
+\begin{verbatim}
+Hallo
+Welt
+\end{verbatim}
+ 
+\mdfdefinestyle{mystyle}{leftmargin=0pt ,linecolor=blue}
+ 
+\begin{mdframed}[style=mystyle]
+foo
+\end{mdframed}
+ 
+\newmdtheoremenv [linecolor=blue]{lemma}{Lemma}[section]
+ 
+\section{abc}
+ 
+\begin{lemma}[Some title]
+foo
+foo
+foo
+foo
+foo
+foo
+\end{lemma}
+
+\section{tcolorbox}
+
+\tcbset{colback=red!5!white,colframe=red!75!black,fonttitle=\bfseries}
+\begin{tcolorbox}[title=My title,sidebyside]
+\blindtext
+\tcblower
+This is the lower (\textit{right-handed}) part.
+\end{tcolorbox}
+
+
+
+\end{document}
