@@ -1,0 +1,16 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: biber
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+%Bibliografie-Zeug
+\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
+\addbibresource{Literatur.bib}
+
+\begin{document}
+
+
+\printbibliography 
+
+\end{document}
