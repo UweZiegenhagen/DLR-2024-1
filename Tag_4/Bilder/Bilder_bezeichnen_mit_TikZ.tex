@@ -1,0 +1,38 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[left=1cm,right=1cm,top=1cm,bottom=1cm,landscape]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+
+
+\begin{document}
+
+\begin{tikzpicture}
+\node[anchor=north west ,inner sep=0] (frame1) at (0,15)     {\includegraphics[width=20cm]{Katze}};
+\draw[help lines,white] (0,0) grid (20,15);
+\node[rotate=-45,white] (227) at (10,10) {\bfseries\Large 227};
+
+\draw[->,very thick,green] (1,1) -- (1,10);
+\draw[->,very thick,green] (1,1) -- (18,1);
+
+\foreach \i in {1,...,10}\node[white,above left] at (1,\i) {\footnotesize$\i$};
+\foreach \i in {1,2,...,16}\node[white,below right] at (\i,1) {\footnotesize$\i$};
+\end{tikzpicture}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{Katze}
+\end{center}
+
+\clearpage

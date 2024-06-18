@@ -1,0 +1,31 @@
+%!TEX TS-program = LuaLaTeX
+\documentclass[tikz,border=0.5cm]{standalone}
+
+\usetikzlibrary { decorations.pathmorphing, decorations.pathreplacing, decorations.shapes, } 
+
+\begin{document}
+
+\tikzset{
+    con/.style={draw=none,
+                postaction={decoration={zigzag,mark=at position .6 with
+                      {\pgftransformscale{3}\arrow[blue!50!black]{angle 90}}},decorate},
+                postaction={draw,blue!50!black,decoration={zigzag,amplitude=1pt, 
+                      segment length=8pt},decorate}
+               }
+}
+
+
+\begin{tikzpicture}
+
+\node{\LaTeX} 
+child [con]{ node {pdf\LaTeX}
+	child { node {1} } 
+	child { node {2} }	
+	child { node {3} }
+}
+child {node {xe\LaTeX} }
+child {node {lua\LaTeX} }
+;
+
+\end{tikzpicture}
+\end{document}
