@@ -1,0 +1,72 @@
+{
+    "latex-workshop.latex.recipes": [
+	  {
+        "name": "pdflatex",
+        "tools": [
+			"pdflatex"
+		]
+	  },
+      {
+          "name": "lualatex->biber->lualatex",
+          "tools": [
+              "lualatex",
+              "biber",
+              "lualatex"
+          ]
+      },
+      {
+        "name": "lualatex",
+        "tools": [
+			"lualatex"
+		]
+    },
+
+    {
+        "name": "Arara",
+        "tools": [
+			"arara"
+		]
+    }		
+	
+	]
+    ,
+  "latex-workshop.latex.tools": [
+      {
+          "name": "lualatex",
+          "command": "lualatex",
+          "args": [
+              "-synctex=1",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-pdf",
+              "%DOC%.tex"
+          ]
+      },
+      {
+          "name": "Arara",
+          "command": "arara",
+          "args": [
+              "%DOC%.tex"
+          ]
+      },	  
+      {
+          "name": "pdflatex",
+          "command": "pdflatex",
+          "args": [
+              "--shell-escape",
+              "-synctex=1",
+              "%DOC%.tex"
+          ]
+      },
+      {
+          "name": "biber",
+          "command": "biber",
+          "args": [
+              "%DOCFILE%"
+          ]
+      }
+    ],
+    "accessibility.voice.speechLanguage": "de-DE",
+    "window.confirmSaveUntitledWorkspace": false,
+    "latex-workshop.intellisense.citation.backend": "biblatex"
+}
